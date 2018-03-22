@@ -1,0 +1,115 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!687078895 &4343727234628468602
+SpriteAtlas:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_Name: Hall
+  m_EditorData:
+    textureSettings:
+      serializedVersion: 2
+      anisoLevel: 1
+      compressionQuality: 50
+      maxTextureSize: 2048
+      textureCompression: 0
+      filterMode: 1
+      generateMipMaps: 0
+      readable: 0
+      crunchedCompression: 0
+      sRGB: 1
+    platformSettings:
+    - m_BuildTarget: Android
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 65
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+    - m_BuildTarget: iPhone
+      m_MaxTextureSize: 2048
+      m_ResizeAlgorithm: 0
+      m_TextureFormat: 33
+      m_TextureCompression: 1
+      m_CompressionQuality: 50
+      m_CrunchedCompression: 0
+      m_AllowsAlphaSplitting: 0
+      m_Overridden: 1
+      m_AndroidETC2FallbackOverride: 0
+    packingParameters:
+      serializedVersion: 2
+      padding: 2
+      blockOffset: 1
+      allowAlphaSplitting: 0
+      enableRotation: 1
+      enableTightPacking: 0
+    variantMultiplier: 1
+    packables:
+    - {fileID: 102900000, guid: 69df68fa6c9adcd4993d044adc6138b9, type: 3}
+    bindAsDefault: 1
+  m_MasterAtlas: {fileID: 0}
+  m_PackedSprites:
+  - {fileID: 21300000, guid: 4ceae583b038bd4448318e96a1f2a85a, type: 3}
+  - {fileID: 21300000, guid: d36f1044420d10b43bf31ebe3d8989c2, type: 3}
+  - {fileID: 21300000, guid: 48476bf1a5fc11744aebd54cc2a2aafc, type: 3}
+  - {fileID: 21300000, guid: 451b762eacaa7fc44bf7167258224ca0, type: 3}
+  - {fileID: 21300000, guid: 102f9d8b9898efa4a85adbcf7b2014d5, type: 3}
+  - {fileID: 21300000, guid: d6979090a3cb97546b8377f10ecfa2b1, type: 3}
+  - {fileID: 21300000, guid: e7a2f84ed582bef41a338450b4977a7b, type: 3}
+  - {fileID: 21300000, guid: 566d7e095bd0461499af566c95453062, type: 3}
+  - {fileID: 21300000, guid: 56375646b4897a64283c81667e4ba0d9, type: 3}
+  - {fileID: 21300000, guid: 559014bedab2ae24e91cd071bbd5307e, type: 3}
+  - {fileID: 21300000, guid: b2067ab128cff3145848ff00ab00e56f, type: 3}
+  - {fileID: 21300000, guid: 90d75283f937ddd4e86ea0b3938952ed, type: 3}
+  - {fileID: 21300000, guid: 91621b49c615d3448903150f229de5a0, type: 3}
+  - {fileID: 21300000, guid: 776ca6199c8cb2e47aace258ca5097ec, type: 3}
+  - {fileID: 21300000, guid: f033c4e8379510747bbfd8e10db6e231, type: 3}
+  - {fileID: 21300000, guid: 3355405fa8dd77745aba9800d19a45ab, type: 3}
+  - {fileID: 21300000, guid: f58f730a1478c50458a031f6a2204633, type: 3}
+  - {fileID: 21300000, guid: ed75af5f2e15c2f46a04ca9105b3ceaf, type: 3}
+  - {fileID: 21300000, guid: 8da41f9568cfddd489da6f4c8886e253, type: 3}
+  - {fileID: 21300000, guid: c501c6a07fcd21a46a999fcb74fa46b5, type: 3}
+  - {fileID: 21300000, guid: 9feb6fcbfac912146aeae9eb91c7ce44, type: 3}
+  - {fileID: 21300000, guid: 5d8a4544fae880144a4d2c1c9558addf, type: 3}
+  - {fileID: 21300000, guid: fa5c9cf240c22724b8b02a822783f96b, type: 3}
+  - {fileID: 21300000, guid: e79f95c898143844282d225da7e01466, type: 3}
+  - {fileID: 21300000, guid: 8f4031dd0ec437347a03fae3b49424ee, type: 3}
+  - {fileID: 21300000, guid: 919c947828625e341a64d1a0f740f88e, type: 3}
+  - {fileID: 21300000, guid: 08de5aca0297bcf4e9cd289f8402bf0c, type: 3}
+  - {fileID: 21300000, guid: b442b7d26833895419515a777077a04e, type: 3}
+  - {fileID: 21300000, guid: 7a06d06088dd60e4b80dd9b0ab3ea9a6, type: 3}
+  m_PackedSpriteNamesToIndex:
+  - background
+  - main_meinv
+  - renwu
+  - btn_cj
+  - btn_jr
+  - title (2)
+  - gonggao
+  - hunanmajiang1
+  - di1
+  - btn_yellow (5)
+  - di_hu
+  - title
+  - fengx
+  - btn_zhanji
+  - title111
+  - enter_game
+  - btn_bangz
+  - btn_setting
+  - dik
+  - btn_youxiang
+  - toux1
+  - toux
+  - createroom_chuangjianfangjian2
+  - btn_tuichu1
+  - fengding
+  - wenzi1
+  - main_lanzhuan
+  - tao1
+  - tao2
+  m_Tag: Hall
+  m_IsVariant: 0
