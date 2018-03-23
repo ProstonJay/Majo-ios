@@ -1,7 +1,7 @@
 fileFormatVersion: 2
 guid: 8b332293b78324759856df60cd4f876f
 folderAsset: yes
-timeCreated: 1503646081
+timeCreated: 1521801612
 licenseType: Free
 PluginImporter:
   externalObjects: {}
@@ -12,22 +12,6 @@ PluginImporter:
   isOverridable: 0
   platformData:
   - first:
-      '': Any
-    second:
-      enabled: 0
-      settings:
-        Exclude Android: 1
-        Exclude Editor: 1
-        Exclude Linux: 1
-        Exclude Linux64: 1
-        Exclude LinuxUniversal: 1
-        Exclude OSXIntel: 1
-        Exclude OSXIntel64: 1
-        Exclude OSXUniversal: 1
-        Exclude Win: 1
-        Exclude Win64: 1
-        Exclude iOS: 1
-  - first:
       Any: 
     second:
       enabled: 0
@@ -35,7 +19,7 @@ PluginImporter:
   - first:
       Editor: Editor
     second:
-      enabled: 0
+      enabled: 1
       settings:
         DefaultValueInitialized: true
   userData: 

@@ -1,8 +1,9 @@
-﻿using cn.sharesdk.unity3d;
+﻿
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+//using cn.sharesdk.unity3d;
 
 public class ReadyView : MonoBehaviour {
 
@@ -15,7 +16,7 @@ public class ReadyView : MonoBehaviour {
     public Button Btn_Invet;
     public Button Btn_Ready;
     //邀请 
-    public ShareSDK ssdk;
+    //public ShareSDK ssdk;
 
     public GameObject obj_my;
     public GameObject obj_right;
@@ -101,8 +102,8 @@ public class ReadyView : MonoBehaviour {
         Btn_Invet.onClick.AddListener(InvertPresss);
         Btn_Ready.onClick.AddListener(PresssBtn_Ready);
         //截屏分享
-        ssdk = GetComponent<ShareSDK>();
-        ssdk.shareHandler += ShareResultHandler;
+        //ssdk = GetComponent<ShareSDK>();
+        //ssdk.shareHandler += ShareResultHandler;
     }
     //初始化准备界面数据
     public void InitReadyInfo()
@@ -180,59 +181,59 @@ public class ReadyView : MonoBehaviour {
 
     void InvertPresss()
     {
-        ShareContent content = new ShareContent();
+        //ShareContent content = new ShareContent();
         //content.SetTitle("【开心麻将馆】");
-        string roomiD = GameInfo.Instance.roomId.ToString();
-        string pw = "无密码";
-        if (GameInfo.Instance.roomPassWord > 0)
-        {
-            pw = GameInfo.Instance.roomPassWord.ToString();
-        }
-        string maxPoint = GameInfo.Instance.maxPoint.ToString();
-        string maxRound = GameInfo.Instance.maxRound.ToString();
-        string zjDouble = "";
-        if (GameInfo.Instance.isZjDouble == 1)
-        {
-            zjDouble = "庄翻倍";
-        }
-        string isQiangGang = "";
-        if (GameInfo.Instance.canQiangGang == 1)
-        {
-            isQiangGang = "可抢杠";
-        }
-        string isDaiGen = "";
-        if (GameInfo.Instance.isDaiGen == 1)
-        {
-            isDaiGen = "带根";
-        }
-        string isZimoHu = "";
-        if (GameInfo.Instance.isZiMoHu == 1)
-        {
-            isZimoHu = "自摸胡";
-        }
-        content.SetText("【房号:" + roomiD + " 密码:" + pw + "】" + maxRound + "局," + maxPoint + "封顶," + zjDouble+"," + isQiangGang + "," + isDaiGen + "," + isZimoHu+ "■■■四川大众麻将■■■");
-        //content.SetComment("快来人，三缺一啦");
-        content.SetShareType(ContentType.Text);
-        //ssdk.ShowPlatformList(null, content, 100, 100);
-        ssdk.ShowShareContentEditor(PlatformType.WeChat, content);
+        //string roomiD = GameInfo.Instance.roomId.ToString();
+        //string pw = "无密码";
+        //if (GameInfo.Instance.roomPassWord > 0)
+        //{
+        //    pw = GameInfo.Instance.roomPassWord.ToString();
+        //}
+        //string maxPoint = GameInfo.Instance.maxPoint.ToString();
+        //string maxRound = GameInfo.Instance.maxRound.ToString();
+        //string zjDouble = "";
+        //if (GameInfo.Instance.isZjDouble == 1)
+        //{
+        //    zjDouble = "庄翻倍";
+        //}
+        //string isQiangGang = "";
+        //if (GameInfo.Instance.canQiangGang == 1)
+        //{
+        //    isQiangGang = "可抢杠";
+        //}
+        //string isDaiGen = "";
+        //if (GameInfo.Instance.isDaiGen == 1)
+        //{
+        //    isDaiGen = "带根";
+        //}
+        //string isZimoHu = "";
+        //if (GameInfo.Instance.isZiMoHu == 1)
+        //{
+        //    isZimoHu = "自摸胡";
+        //}
+        //content.SetText("【房号:" + roomiD + " 密码:" + pw + "】" + maxRound + "局," + maxPoint + "封顶," + zjDouble+"," + isQiangGang + "," + isDaiGen + "," + isZimoHu+ "■■■四川大众麻将■■■");
+        ////content.SetComment("快来人，三缺一啦");
+        //content.SetShareType(ContentType.Text);
+        ////ssdk.ShowPlatformList(null, content, 100, 100);
+        //ssdk.ShowShareContentEditor(PlatformType.WeChat, content);
     }
 
-    void ShareResultHandler(int repID, ResponseState state, PlatformType type, Hashtable result)
-    {
-        if (state == ResponseState.Success)
-        {
-            GameEvent.DoMsgTipEvent("分享成功");
-        }
-        //失败  
-        else if (state == ResponseState.Fail)
-        {
-            GameEvent.DoMsgTipEvent("分享失败");
-        }
-        //关闭  
-        else if (state == ResponseState.Cancel)
-        {
-            GameEvent.DoMsgTipEvent("分享取消");
-        }
-    }
+    //void ShareResultHandler(int repID, ResponseState state, PlatformType type, Hashtable result)
+    //{
+    //    if (state == ResponseState.Success)
+    //    {
+    //        GameEvent.DoMsgTipEvent("分享成功");
+    //    }
+    //    //失败  
+    //    else if (state == ResponseState.Fail)
+    //    {
+    //        GameEvent.DoMsgTipEvent("分享失败");
+    //    }
+    //    //关闭  
+    //    else if (state == ResponseState.Cancel)
+    //    {
+    //        GameEvent.DoMsgTipEvent("分享取消");
+    //    }
+    //}
 
 }

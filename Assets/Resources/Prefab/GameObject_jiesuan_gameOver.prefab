@@ -564,7 +564,6 @@ GameObject:
   m_Component:
   - component: {fileID: 224564588102887336}
   - component: {fileID: 114912723271445178}
-  - component: {fileID: 114429886538326328}
   m_Layer: 0
   m_Name: GameObject_jiesuan_gameOver
   m_TagString: Untagged
@@ -2628,38 +2627,6 @@ MonoBehaviour:
   m_FillAmount: 1
   m_FillClockwise: 1
   m_FillOrigin: 0
---- !u!114 &114429886538326328
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1381223287513936}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d266d8e8bcccf488686d3be61cf1fa24, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  appKey: moba6b6c6d6
-  appSecret: b89d2427a3bc7ad1aea1e1e8c1d36bf3
-  devInfo:
-    wechat:
-      Enable: 1
-      app_id: wx4868b35061f87885
-      app_secret: 64020361b8ec4c99936c0e3999a9f249
-    wechatMoments:
-      Enable: 1
-      app_id: wx4868b35061f87885
-      app_secret: 64020361b8ec4c99936c0e3999a9f249
-    wechatFavorites:
-      Enable: 1
-      app_id: wx4868b35061f87885
-      app_secret: 64020361b8ec4c99936c0e3999a9f249
-    copy:
-      Enable: 1
-    wechatSeries:
-      Enable: 1
-      app_id: wx4868b35061f87885
-      app_secret: 64020361b8ec4c99936c0e3999a9f249
 --- !u!114 &114434590129115334
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -3755,7 +3722,6 @@ MonoBehaviour:
   leaveBtn: {fileID: 114065518536041676}
   Btn_FenXiang: {fileID: 114114241520227074}
   Text_timeStamp: {fileID: 114340842688868756}
-  ssdk: {fileID: 0}
 --- !u!114 &114924693332729644
 MonoBehaviour:
   m_ObjectHideFlags: 1
