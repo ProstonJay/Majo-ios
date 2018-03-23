@@ -167,7 +167,6 @@ public class CreatRoomWindow : MonoBehaviour {
 
     void CreatPressed()
     {
-        Debug.Log("开房需要" + MaxRound / 12 + "钻石"+"密码="+ inPut_PassWord.text);
         if (GameInfo.Instance.UserFK <0|| GameInfo.Instance.UserFK < MaxRound/12)
         {
             GameEvent.DoMsgEvent("房卡不足,请联系管理员!");

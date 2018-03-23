@@ -140,7 +140,6 @@ public class NettySocket : MonoBehaviour
         try
         {
            // GameEvent.DoNetSocket(1);
-            Debug.Log("发消息给服务器");
             socketModel.SetToken(GameInfo.Instance.ToKen);
             byte[] msg = Serial(socketModel);
             //消息体结构：消息体长度+消息体
