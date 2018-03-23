@@ -403,16 +403,37 @@ namespace cn.sharesdk.unity3d
 			shareParams ["isShareToStory"] = enalble;
 		}
 
-//		// iOS v4.0.8 微信小程序 withTicket开关
-//		public void SetMiniProgramShareWithShareTicket(bool enalble){
-//			shareParams ["withShareTicket"] = enalble;
-//		}
-//
-//		// iOS v4.0.8 分享小程序的版本（0-正式，1-开发，2-体验）
-//		public void SetMiniProgramType(int type){
-//			shareParams ["miniProgramType"] = type;
-//		}
-//
+		// Android Only  分享小程序的ID
+		public void SetMiniProgramUserName(String userName){
+			#if UNITY_ANDROID
+			shareParams ["wxUserName"] = userName;
+			#elif UNITY_IPHONE
+			#endif
+		}
+
+		// Android Only 微信小程序的页面路径
+		public void SetMiniProgramPath(String path){
+			#if UNITY_ANDROID
+			shareParams ["wxPath"] = path;
+			#elif UNITY_IPHONE
+			#endif
+		}
+
+		// Android Only 微信小程序 withTicket开关
+		public void SetMiniProgramWithShareTicket(bool enalble){
+			#if UNITY_ANDROID
+			shareParams ["wxWithShareTicket"] = enalble;
+			#elif UNITY_IPHONE
+			#endif
+		}
+
+		// Android Only 分享小程序的版本（0-正式，1-开发，2-体验）
+		public void SetMiniProgramType(int type){
+			#if UNITY_ANDROID
+			shareParams ["wxMiniProgramType"] = type;
+			#elif UNITY_IPHONE
+			#endif
+		}
 			
 		//不同平台分享不同内容
 		public void SetShareContentCustomize(PlatformType platform, ShareContent content) {

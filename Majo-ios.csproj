@@ -295,9 +295,6 @@
     <Reference Include="UnityEngine.StandardEvents">
       <HintPath>C:/Users/张鹏/AppData/LocalLow/Unity/cache/packages/packages.unity.com/com.unity.standardevents@1.0.10/UnityEngine.StandardEvents.dll</HintPath>
     </Reference>
-    <Reference Include="ICSharpCode.SharpZipLib">
-      <HintPath>Assets/ShareSDKiOSAutoPackage/Editor/SDKPorter/XCodeEditor/ICSharpCode.SharpZipLib.dll</HintPath>
-    </Reference>
     <Reference Include="UnityEditor.iOS.Extensions.Xcode">
       <HintPath>E:/unity/Editor/Data/PlaybackEngines/iOSSupport\UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
     </Reference>
@@ -410,7 +407,6 @@
     <Compile Include="Assets\Script\Ui\Room\RoomControl.cs" />
     <Compile Include="Assets\Script\Ui\Room\RoomView.cs" />
     <Compile Include="Assets\Script\Ui\RoomAction.cs" />
-    <Compile Include="Assets\ShareSDKiOSAutoPackage\ManagePlatforms.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\Android\ShareSDK\AndroidManifest.xml" />
@@ -430,6 +426,9 @@
     <None Include="Assets\Plugins\DOTween\DOTween.XML" />
     <None Include="Assets\Plugins\DOTween\Editor\DOTweenEditor.XML" />
     <None Include="Assets\Plugins\DOTween\readme.txt" />
+    <None Include="Assets\Plugins\iOS\ShareSDK\Editor\SDK\ShareSDK\Support\Optional\ShareSDKConfigFile.bundle\ShareContent.xml" />
+    <None Include="Assets\Plugins\iOS\ShareSDK\Editor\SDK\ShareSDK\Support\Optional\ShareSDKConfigFile.bundle\ShareSDK.xml" />
+    <None Include="Assets\Plugins\iOS\ShareSDK\Editor\SDK\ShareSDK\Support\PlatformSDK\WeChatSDK\README.txt" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <Target Name="GenerateTargetFrameworkMonikerAttribute" />
