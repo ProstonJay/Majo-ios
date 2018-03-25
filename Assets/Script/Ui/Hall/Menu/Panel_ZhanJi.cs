@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using ProtoModelDLL;
 public class Panel_ZhanJi : MonoBehaviour {
 
     public Button closeBtn;

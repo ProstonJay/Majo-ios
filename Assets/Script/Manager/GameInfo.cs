@@ -1,5 +1,4 @@
 ﻿using ProtoModelDLL;
-using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -90,7 +89,7 @@ public class GameInfo : MonoBehaviour {
     public List<Action> leftAcionList = new List<Action>();//操作牌型的列表
 
     //是否在操作回合,只有在自己摸牌的时候才能操作
-    public Boolean PlayFlag;
+    public System.Boolean PlayFlag;
 
     //更新用户钻石
     public void setUserFk(int value)

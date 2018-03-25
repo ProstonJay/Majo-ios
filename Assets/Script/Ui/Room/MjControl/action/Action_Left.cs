@@ -1,7 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+using ProtoModelDLL;
 public class Action_Left : MonoBehaviour {
 
     public List<GameObject> mj = new List<GameObject>();

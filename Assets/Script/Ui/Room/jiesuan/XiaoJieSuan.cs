@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using ProtoModelDLL;
 public class XiaoJieSuan : MonoBehaviour {
 
     public GameObject GO_MyInfo;

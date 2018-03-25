@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using ProtoModelDLL;
 public class GameObject_Hall_ZhanJi_scrollBox : MonoBehaviour {
 
     public Text Text_Info;

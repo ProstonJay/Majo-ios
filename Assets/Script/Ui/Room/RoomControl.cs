@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using ProtoModelDLL;
 
 public class RoomControl : MonoBehaviour, IPointerClickHandler
 {
@@ -167,8 +168,7 @@ public class RoomControl : MonoBehaviour, IPointerClickHandler
                 GameEvent.DoChuPai(chuPaiPos, chuPaiMj, true);
             }
             //GameInfo.Instance
-            //List<PlayerData> playerDataList = GameInfo.Instance.skm.GetPdata();
-            List<PlayerData> playerDataList = new List<PlayerData>();
+            List<PlayerData> playerDataList = GameInfo.Instance.skm.GetPdata();
             for (int i = 0; i < playerDataList.Count; i++)
             {
                 PlayerData pd = playerDataList[i];

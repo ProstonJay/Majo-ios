@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using ProtoModelDLL;
 public class JieSuanPanel : MonoBehaviour {
 
     public Image Img_Head;

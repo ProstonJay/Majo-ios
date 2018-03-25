@@ -332,16 +332,10 @@
     <Compile Include="Assets\Script\Prefab\PopModle.cs" />
     <Compile Include="Assets\Script\Prefab\SocketMask.cs" />
     <Compile Include="Assets\Script\Prefab\Warning.cs" />
-    <Compile Include="Assets\Script\Server\Action.cs" />
-    <Compile Include="Assets\Script\Server\BattleData.cs" />
     <Compile Include="Assets\Script\Server\HallServer.cs" />
     <Compile Include="Assets\Script\Server\Helper_ErrCode.cs" />
-    <Compile Include="Assets\Script\Server\JsData.cs" />
     <Compile Include="Assets\Script\Server\LoginServer.cs" />
-    <Compile Include="Assets\Script\Server\MailData.cs" />
     <Compile Include="Assets\Script\Server\NettySocket.cs" />
-    <Compile Include="Assets\Script\Server\Player.cs" />
-    <Compile Include="Assets\Script\Server\PlayerData.cs" />
     <Compile Include="Assets\Script\Server\ProtocolMC.cs" />
     <Compile Include="Assets\Script\Server\ProtocolSC.cs" />
     <Compile Include="Assets\Script\Server\RoomServer.cs" />

@@ -2,7 +2,7 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
-
+using ProtoModelDLL;
 public class GameObject_Hall_ZhanJi_scrollBox_player : MonoBehaviour {
 
     public Image Img_headIcon;
