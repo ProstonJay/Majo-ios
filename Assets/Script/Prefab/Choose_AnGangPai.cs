@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using ProtoModelDLL;
 
 public class Choose_AnGangPai : MonoBehaviour, IPointerClickHandler
 {

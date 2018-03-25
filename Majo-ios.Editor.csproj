@@ -268,6 +268,12 @@
     <Reference Include="protobuf-net">
       <HintPath>Assets/Plugins/protobuf-net.dll</HintPath>
     </Reference>
+    <Reference Include="ProtoModelDLL">
+      <HintPath>Assets/Plugins/ProtoModelDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Serializer">
+      <HintPath>Assets/Plugins/Serializer.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets/Plugins/DOTween/DOTween.dll</HintPath>
     </Reference>

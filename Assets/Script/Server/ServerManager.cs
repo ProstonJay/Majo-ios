@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using ProtoModelDLL;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -32,8 +33,8 @@ public class ServerManager  {
     //解析服务器数据
     public void ReceiveMsg(SocketModel socketModel)
     {
-        Debug.Log("收到消息主协议=" + socketModel.GetMainCmd()+ "子协议 = " + socketModel.GetSubCmd());
-        switch (socketModel.GetMainCmd())
+        Debug.Log("收到消息主协议=" + socketModel.maincmd+ "子协议 = " + socketModel.subcmd);
+        switch (socketModel.maincmd)
         {
             case ProtocolMC.Main_Cmd_LOGIN:
                 loginser.handlerSubCmd(socketModel);

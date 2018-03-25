@@ -4,6 +4,7 @@ using System;
 using System.Collections.Generic;
 using System.Net.Sockets;
 using UnityEngine.SceneManagement;
+using ProtoModelDLL;
 
 public class LoginView : MonoBehaviour
 {

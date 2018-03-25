@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ProtoModelDLL;
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -38,9 +39,9 @@ public class LoginServer
             GameInfo.Instance.UserFK = int.Parse(list[4]);
             GameInfo.Instance.roomId = int.Parse(list[5]);//根据ROOMID判断，是否在房间中，如果roomID不为0，说明上次下线是在房间，请求加入房间
             //邮件
-            GameInfo.Instance.mailList = socketModel.GetMailList();
+            //GameInfo.Instance.mailList = socketModel.GetMailList();
             //战绩
-            GameInfo.Instance.battleList = socketModel.GetBattleList();
+            //GameInfo.Instance.battleList = socketModel.GetBattleList();
             if (GameInfo.Instance.UserIcon > 4)
             {
                 GameInfo.Instance.sex = "boy";

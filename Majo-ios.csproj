@@ -268,6 +268,12 @@
     <Reference Include="protobuf-net">
       <HintPath>Assets/Plugins/protobuf-net.dll</HintPath>
     </Reference>
+    <Reference Include="ProtoModelDLL">
+      <HintPath>Assets/Plugins/ProtoModelDLL.dll</HintPath>
+    </Reference>
+    <Reference Include="Serializer">
+      <HintPath>Assets/Plugins/Serializer.dll</HintPath>
+    </Reference>
     <Reference Include="DOTween">
       <HintPath>Assets/Plugins/DOTween/DOTween.dll</HintPath>
     </Reference>
@@ -340,7 +346,6 @@
     <Compile Include="Assets\Script\Server\ProtocolSC.cs" />
     <Compile Include="Assets\Script\Server\RoomServer.cs" />
     <Compile Include="Assets\Script\Server\ServerManager.cs" />
-    <Compile Include="Assets\Script\Server\SocketModel.cs" />
     <Compile Include="Assets\Script\Ui\Hall\Enter\CreatRoomWindow.cs" />
     <Compile Include="Assets\Script\Ui\Hall\Enter\JoinRoomWindow.cs" />
     <Compile Include="Assets\Script\Ui\Hall\HallView.cs" />

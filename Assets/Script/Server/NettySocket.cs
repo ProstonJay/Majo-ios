@@ -7,6 +7,7 @@ using System.Text;
 using System.Threading;
 using UnityEngine;
 using UnityEngine.UI;
+using ProtoModelDLL;
 
 public class NettySocket : MonoBehaviour
 {
@@ -140,7 +141,7 @@ public class NettySocket : MonoBehaviour
         try
         {
            // GameEvent.DoNetSocket(1);
-            socketModel.SetToken(GameInfo.Instance.ToKen);
+            socketModel.Token=GameInfo.Instance.ToKen;
             byte[] msg = Serial(socketModel);
             //消息体结构：消息体长度+消息体
             byte[] data = new byte[4 + msg.Length];
@@ -248,11 +249,13 @@ public class NettySocket : MonoBehaviour
         }
     }
 
+    private static Serializer serializer = new Serializer();
+
     private byte[] Serial(SocketModel socketModel)//将SocketModel转化成字节数组
     {
         using (MemoryStream ms = new MemoryStream())
         {
-            Serializer.Serialize<SocketModel>(ms, socketModel);
+            serializer.Serialize(ms, socketModel);
             byte[] data = new byte[ms.Length];
             ms.Position = 0;
             ms.Read(data, 0, data.Length);
@@ -265,7 +268,8 @@ public class NettySocket : MonoBehaviour
         {
             ms.Write(msg, 0, msg.Length);
             ms.Position = 0;
-            SocketModel socketModel = Serializer.Deserialize<SocketModel>(ms);
+            SocketModel socketModel = default(SocketModel);
+            socketModel = (SocketModel)serializer.Deserialize(ms,null,typeof(SocketModel));
             return socketModel;
         }
     }

@@ -167,7 +167,8 @@ public class RoomControl : MonoBehaviour, IPointerClickHandler
                 GameEvent.DoChuPai(chuPaiPos, chuPaiMj, true);
             }
             //GameInfo.Instance
-            List<PlayerData> playerDataList = GameInfo.Instance.skm.GetPdata();
+            //List<PlayerData> playerDataList = GameInfo.Instance.skm.GetPdata();
+            List<PlayerData> playerDataList = new List<PlayerData>();
             for (int i = 0; i < playerDataList.Count; i++)
             {
                 PlayerData pd = playerDataList[i];
