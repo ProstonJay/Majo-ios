@@ -389,6 +389,7 @@
     <Compile Include="Assets\Script\Ui\Room\MjControl\outBin\My_out_Bin.cs" />
     <Compile Include="Assets\Script\Ui\Room\MjControl\outBin\Right_out_Bin.cs" />
     <Compile Include="Assets\Script\Ui\Room\MjControl\outBin\Top_out_Bin.cs" />
+    <Compile Include="Assets\Script\Ui\Room\MjControl\RoomAction.cs" />
     <Compile Include="Assets\Script\Ui\Room\MjControl\setting\DismissPanel.cs" />
     <Compile Include="Assets\Script\Ui\Room\MjControl\setting\setPanel.cs" />
     <Compile Include="Assets\Script\Ui\Room\MjControl\setting\setView.cs" />
@@ -400,7 +401,6 @@
     <Compile Include="Assets\Script\Ui\Room\roomAnimator.cs" />
     <Compile Include="Assets\Script\Ui\Room\RoomControl.cs" />
     <Compile Include="Assets\Script\Ui\Room\RoomView.cs" />
-    <Compile Include="Assets\Script\Ui\RoomAction.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\Plugins\DOTween\DOTween.XML" />

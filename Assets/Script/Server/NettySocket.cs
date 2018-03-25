@@ -19,7 +19,7 @@ public class NettySocket : MonoBehaviour
     //外网地址
     //public static string ipArderrs = "112.74.163.31";
     //内网地址
-    public static string ipArderrs = "192.168.0.107";
+    public static string ipArderrs = "192.168.0.104";
 
     private Thread threadReceive;
 

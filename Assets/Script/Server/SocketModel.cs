@@ -17,22 +17,21 @@ public class SocketModel
     private List<string> message;//消息
     [ProtoMember(6)]
     private List<int> dataList;//消息
-    [ProtoMember(7)]
-    private List<PlayerData> pdata;//消息
-    [ProtoMember(8)]
-    private List<Action> adata;//数据
-    [ProtoMember(9)]
-    private List<MailData> mailList;//邮件
-    [ProtoMember(10)]
-    private List<BattleData> BattleList;
+    //[ProtoMember(7)]
+    //private List<PlayerData> pdata;//消息
+    //[ProtoMember(8)]
+    //private List<Action> adata;//数据
+    //[ProtoMember(9)]
+    //private List<MailData> mailList;//邮件
+    //[ProtoMember(10)]
+    //private List<BattleData> BattleList;
 
     public SocketModel()
     {
 
     }
-
-   public SocketModel(string tk,int maincmd, int subcmd, int command, List<string> message, List<int> datalist, List<PlayerData> pdata,
-       List<Action> adata, List<MailData> mdata)
+    // List<PlayerData> pdata,List<Action> adata, List<MailData> mdata
+   public SocketModel(string tk,int maincmd, int subcmd, int command, List<string> message, List<int> datalist)
     {
         this.Token = tk;
         this.maincmd = maincmd;
@@ -40,9 +39,9 @@ public class SocketModel
         this.command = command;
         this.message = message;
         this.dataList = datalist;
-        this.pdata = pdata;
-        this.adata = adata;
-        this.mailList = mdata;
+        //this.pdata = pdata;
+        //this.adata = adata;
+        //this.mailList = mdata;
     }
 
     public string GetToken()
@@ -97,37 +96,37 @@ public class SocketModel
 
     public List<PlayerData> GetPdata()
     {
-        return pdata;
+        return null;
     }
     public void SetPdata(List<PlayerData> datalist)
     {
-        this.pdata = datalist;
+        //this.pdata = datalist;
     }
 
     public List<Action> GetAdata()
     {
-        return adata;
+        return null;
     }
     public void SetAdata(List<Action> datalist)
     {
-        this.adata = datalist;
+        //this.adata = datalist;
     }
 
     public List<MailData> GetMailList()
     {
-        return mailList;
+        return null;
     }
     public void SetMailList(List<MailData> list)
     {
-        this.mailList = list;
+        //this.mailList = list;
     }
 
     public List<BattleData> GetBattleList()
     {
-        return BattleList;
+        return null;
     }
     public void SetBattleList(List<BattleData> date)
     {
-        this.BattleList = date;
+        //this.BattleList = date;
     }
 }
